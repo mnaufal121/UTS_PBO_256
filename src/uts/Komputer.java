@@ -10,5 +10,26 @@ package uts;
  * @author Asus
  */
 public class Komputer {
+    private CPU cp;
     
+    public Komputer(CPU cp){
+        this.cp= cp;
+    }
+    public Komputer(){
+        
+    }
+    
+    public void memasang(CPU cp){
+        this.cp= cp;
+        System.out.println("CPU : "+cp.getCPUData()+" GHz"+" dipasang");
+    }
+    
+    public void mencabut(){
+        this.cp = null;
+        System.out.println("CPU : "+cp.getCPUData()+" GHz"+" dicabut");
+    }
+    
+    public void cetakinfo(){
+        System.out.println("Spesifikasi : "+cp.getCPUData()+" GHz");
+    }
 }
