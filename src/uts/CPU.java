@@ -29,11 +29,10 @@ class intel extends CPU{
       this.kecepatan = kecepatan;
       this.nama="Intel";
     }
-
+}
 class amd extends CPU{
     public amd(int kecepatan){
         this.kecepatan = kecepatan;
         this.nama = "AMD";
     }
-}
 }
